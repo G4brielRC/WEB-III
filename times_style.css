@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* NAVBAR */
+nav {
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+#logo {
+    height: 50px;
+}
+
+.nav-links button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.nav-links button:hover {
+    background: #444;
+    border-radius: 5px;
+}
+
+/* CABEÇALHO */
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(216, 45, 2);
+    color: #000;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header p {
+    margin-top: 5px;
+}
+
+/* LISTA DE CLUBES */
+.clubes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.clube-card {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.clube-card img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.clube-card:hover {
+    transform: scale(1.05);
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
